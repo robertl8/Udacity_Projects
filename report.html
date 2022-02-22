@@ -14763,60 +14763,64 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer: </strong></p>
 <p>Ensemble Methods (Bagging, AdaBoost, Random Forest, Gradient Boosting)
-<em>There are more than one model to choose from Ensemble Methods. For this project, I am using AdaBoost</em></p>
-<p>Describe one real-world application in industry where the model can be applied.
-AdaBoost can be used to solve a variety of real-world problems, such as predicting customer churn and classifying the types of topics customers are talking/calling about. [ref: <a href="https://hackernoon.com/under-the-hood-of-adaboost-8eb499d78eab">https://hackernoon.com/under-the-hood-of-adaboost-8eb499d78eab</a>]</p>
+There are more than one model to choose from Ensemble Methods. For this project, I am using Adaboost
+AdaBoost
+Describe one real-world application in industry where the model can be applied.
+One example of AdaBoost classifier is to forecast customer rate of attrition where customers quit doing business with a company. 
+[ref: <a href="https://hackernoon.com/under-the-hood-of-adaboost-8eb499d78eab">https://hackernoon.com/under-the-hood-of-adaboost-8eb499d78eab</a>]
+[ref: <a href="https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/">https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/</a>]
+[ref: <a href="https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner">https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner</a>]</p>
 <p>What are the strengths of the model; when does it perform well?
-Coming to the advantages, Adaboost is less prone to overfitting as the input parameters are not jointly optimized. The accuracy of weak classifiers can be improved by using Adaboost. Nowadays, Adaboost is being used to classify text and images rather than binary classification problems. [ref: <a href="https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers">https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers</a>.]</p>
+One of the biggest advantages is that AdaBoost improves the accuracy of weak classifiers. It is an ensemble which entails the joining of several sets of weak classifiers to make is a better and more powerful one.  With AdaBoost, because the features are not optimized all together at the same time, it is not as subject to overfitting. 
+ [ref: <a href="https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers">https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers</a>.]
+[ref: <a href="https://scikit-learn.org/stable/modules/ensemble.html#adaboost">https://scikit-learn.org/stable/modules/ensemble.html#adaboost</a>]
+[ref: <a href="https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/">https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/</a>]
+[ref: <a href="https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner">https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner</a>]</p>
 <p>What are the weaknesses of the model; when does it perform poorly?
-The main disadvantage of Adaboost is that it needs a quality dataset. Noisy data and outliers have to be avoided before adopting an Adaboost algorithm. [ref: <a href="https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/#:~:text=Advantages%20and%20disadvantages,-Coming%20to%20the&amp;text=Nowadays%2C%20Adaboost%20is%20being%20used,before%20adopting%20an%20Adaboost%20algorithm">https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/#:~:text=Advantages%20and%20disadvantages,-Coming%20to%20the&amp;text=Nowadays%2C%20Adaboost%20is%20being%20used,before%20adopting%20an%20Adaboost%20algorithm</a>.]</p>
+One of the weaknesses is that it deals poorly with outliers as they tend to skew the data and distort the results. It will need some good data quality check.<br>
+[ref: <a href="https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/#:~:text=Advantages%20and%20disadvantages,-Coming%20to%20the&amp;text=Nowadays%2C%20Adaboost%20is%20being%20used,before%20adopting%20an%20Adaboost%20algorithm">https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/#:~:text=Advantages%20and%20disadvantages,-Coming%20to%20the&amp;text=Nowadays%2C%20Adaboost%20is%20being%20used,before%20adopting%20an%20Adaboost%20algorithm</a>.]
+[ref: <a href="https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/">https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/</a>]
+[ref: <a href="https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner">https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner</a>]</p>
 <p>What makes this model a good candidate for the problem, given what you know about the data?
-In Adaboost method, base estimators are built sequentially and one tries to reduce the bias of the combined estimator. The motivation is to combine several weak models to produce a powerful ensemble. The number of weak learners can be controlled by the parameter n_estimators. The learning_rate parameter controls the contribution of the weak learners in the final combination. By default, weak learners are decision stumps. Different weak learners can be specified through the base_estimator parameter. The main parameters to tune to obtain good results are n_estimators and the complexity of the base estimators (e.g., its depth max_depth or minimum required number of samples to consider a split min_samples_split). [ref: <a href="https://scikit-learn.org/stable/modules/ensemble.html#adaboost">https://scikit-learn.org/stable/modules/ensemble.html#adaboost</a>]
-AdaBoost is adaptive in the sense that subsequent weak learners are tweaked in favor of those instances misclassified by previous classifiers. In some problems it can be less susceptible to the overfitting problem than other learning algorithms. The individual learners can be weak, but as long as the performance of each one is slightly better than random guessing, the final model can be proven to converge to a strong learner.
-[ref: <a href="https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers">https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers</a>.]</p>
+In this project data set, there are a few demographic features and not all of them are strong learners – some of them are weak learners. The benefit of AdaBoost is that it tries to sequentially estimate and progressively learn from these weak correlations, in order to combine these sets of weak learners into a powerful ensemble.  We can tune the n_estimators and /or the learning_rate to optimize the model prediction. 
+[ref: <a href="https://scikit-learn.org/stable/modules/ensemble.html#adaboost">https://scikit-learn.org/stable/modules/ensemble.html#adaboost</a>]
+[ref: <a href="https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers">https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers</a>.]
+[ref: <a href="https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/">https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/</a>]
+[ref: <a href="https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner">https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner</a>]</p>
 <p>Support Vector Machines (SVM)
 Describe one real-world application in industry where the model can be applied.
-Image classification / Recognizing handwriting / Cancer detection</p>
+Image classification</p>
 <p>What are the strengths of the model; when does it perform well?
 The advantages of support vector machines are:
 •   Effective in high dimensional spaces.
-•   Still effective in cases where number of dimensions is greater than the number of samples.
-•   Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.
-•   Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.
-•<br>
-•   What are the weaknesses of the model; when does it perform poorly?</p>
+•   The kernel functions within SVM is a flexible way to make decisions 
+•   When a margin exists between data sets / classes, SVM performs well
+ [ref: <a href="https://dhirajkumarblog.medium.com/top-4-advantages-and-disadvantages-of-support-vector-machine-or-svm-a3c06a2b107">https://dhirajkumarblog.medium.com/top-4-advantages-and-disadvantages-of-support-vector-machine-or-svm-a3c06a2b107</a>]</p>
 <p>What are the weaknesses of the model; when does it perform poorly?
 The disadvantages of support vector machines include:
-•   If the number of features is much greater than the number of samples, avoid over-fitting in choosing Kernel functions and regularization term is crucial.
-•   SVMs do not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation (see Scores and probabilities, below).
+•   Sometimes overfitting
+•   Requires higher computation time and cost compared with other simpler methods
+•   Probability estimate is not a direct product of SVM prediction. It needs more expensive methods to provide
 [ref: <a href="https://scikit-learn.org/stable/modules/svm.html#svm">https://scikit-learn.org/stable/modules/svm.html#svm</a>]</p>
 <p>What makes this model a good candidate for the problem, given what you know about the data?
-This model is good candidate for this dataset because the number of data samples (training examples) is much larger than the number of dimensions (features). Also SVM can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces. [ref: <a href="https://en.wikipedia.org/wiki/Support-vector_machine">https://en.wikipedia.org/wiki/Support-vector_machine</a>]. It has a few parameters to tune to have the best fit while minimizing cost and computation time.</p>
+This model is good candidate for this dataset because the number of data samples (training examples) is much larger than the number of dimensions (features).  Once can also use kernels in SVM as a flexible way to map to higher dimensional space (beyond linear). 
+[ref: <a href="https://en.wikipedia.org/wiki/Support-vector_machine">https://en.wikipedia.org/wiki/Support-vector_machine</a>]</p>
 <p>Logistic Regression
 Describe one real-world application in industry where the model can be applied.
-Marketing – predict if a customer will purchase a product(1) or not (0)</p>
+Make any binary predictions i.e. yes or no, 0 or 1, such as detecting COVID positive cases (if positive then 1, if negative then 0)</p>
 <p>What are the strengths of the model; when does it perform well?
-•   Logistic regression is easier to implement, interpret, and very efficient to train.
-•   It makes no assumptions about distributions of classes in feature space.
-•   It can easily extend to multiple classes(multinomial regression) and a natural probabilistic view of class predictions.
-•   It not only provides a measure of how appropriate a predictor(coefficient size)is, but also its direction of association (positive or negative).
-•   It is very fast at classifying unknown records.
-•   Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.
-•   It can interpret model coefficients as indicators of feature importance.
-•   Logistic regression is less inclined to over-fitting but it can overfit in high dimensional datasets.One may consider Regularization (L1 and L2) techniques to avoid over-fittingin these scenarios.
+•   Logistic regression is simpler and has faster computation time
+•   It is not prone to overfitting 
+•   It is 0, 1 thus no need to assume distribution in a feature. 
 [ref: <a href="https://www.geeksforgeeks.org/advantages-and-disadvantages-of-logistic-regression/">https://www.geeksforgeeks.org/advantages-and-disadvantages-of-logistic-regression/</a>]
 What are the weaknesses of the model; when does it perform poorly?
-•   If the number of observations is lesser than the number of features, Logistic Regression should not be used, otherwise, it may lead to overfitting.
-•   It constructs linear boundaries.
-•   The major limitation of Logistic Regression is the assumption of linearity between the dependent variable and the independent variables.
-•   It can only be used to predict discrete functions. Hence, the dependent variable of Logistic Regression is bound to the discrete number set.
-•   Non-linear problems can’t be solved with logistic regression because it has a linear decision surface. Linearly separable data is rarely found in real-world scenarios.
-•   Logistic Regression requires average or no multicollinearity between independent variables.
-•   It is tough to obtain complex relationships using logistic regression. More powerful and compact algorithms such as Neural Networks can easily outperform this algorithm.
-•   In Linear Regression independent and dependent variables are related linearly. But Logistic Regression needs that independent variables are linearly related to the log odds (log(p/(1-p)).
-[ref: <a href="https://www.geeksforgeeks.org/advantages-and-disadvantages-of-logistic-regression/">https://www.geeksforgeeks.org/advantages-and-disadvantages-of-logistic-regression/</a>]</p>
+•   It only assumes linear relationships between data features. 
+•   Although it’s called regression, it’s actually a classifier. So it does not work well with non-discrete data sets.
+•   It does not perform well in situations where the number samples is far less than the number of features
+ [ref: <a href="https://www.geeksforgeeks.org/advantages-and-disadvantages-of-logistic-regression/">https://www.geeksforgeeks.org/advantages-and-disadvantages-of-logistic-regression/</a>]</p>
 <p>What makes this model a good candidate for the problem, given what you know about the data?
-This project is to predict an outcome that is binary (i.e &lt;=50K or &gt;50K), we can use logistic regression to train the dataset and make a prediction. The best feature of this model is that it is simpler than SVM. We can use logistic regression as the first step to see how the model does. If it fails, then maybe try SVM. [ref: <a href="https://medium.com/axum-labs/logistic-regression-vs-support-vector-machines-svm-c335610a3d16">https://medium.com/axum-labs/logistic-regression-vs-support-vector-machines-svm-c335610a3d16</a>]</p>
+This project is to predict an outcome that is binary (i.e &lt;=50K or &gt;50K), we can use logistic regression to train the dataset and make a prediction. The best feature of this model is that it is simpler than SVM. We can use logistic regression as the first step to see how the model does. If it fails, then maybe try SVM. 
+[ref: <a href="https://medium.com/axum-labs/logistic-regression-vs-support-vector-machines-svm-c335610a3d16">https://medium.com/axum-labs/logistic-regression-vs-support-vector-machines-svm-c335610a3d16</a>]</p>
 
 </div>
 </div>
@@ -15145,8 +15149,14 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Answer: </strong></p>
-<p>The core principle of AdaBoost is to fit a sequence of weak learners (i.e., models that are only slightly better than random guessing, such as small decision trees) on repeatedly modified versions of the data. The predictions from all of them are then combined through a weighted majority vote (or sum) to produce the final prediction. [ref: <a href="https://scikit-learn.org/stable/modules/ensemble.html#adaboost">https://scikit-learn.org/stable/modules/ensemble.html#adaboost</a>]  Coming to the advantages, Adaboost is less prone to overfitting as the input parameters are not jointly optimized. The accuracy of weak classifiers can be improved by using Adaboost.[ref: <a href="https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers">https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers</a>.]</p>
-<p>In Adaboost method, base estimators are built sequentially and one tries to reduce the bias of the combined estimator. The motivation is to combine several weak models to produce a powerful ensemble. The number of weak learners can be controlled by the parameter n_estimators. The learning_rate parameter controls the contribution of the weak learners in the final combination. By default, weak learners are decision stumps. Different weak learners can be specified through the base_estimator parameter. The main parameters to tune to obtain good results are n_estimators and the complexity of the base estimators (e.g., its depth max_depth or minimum required number of samples to consider a split min_samples_split). [ref: <a href="https://scikit-learn.org/stable/modules/ensemble.html#adaboost">https://scikit-learn.org/stable/modules/ensemble.html#adaboost</a>]  AdaBoost is adaptive in the sense that subsequent weak learners are tweaked in favor of those instances misclassified by previous classifiers. In some problems it can be less susceptible to the overfitting problem than other learning algorithms. The individual learners can be weak, but as long as the performance of each one is slightly better than random guessing, the final model can be proven to converge to a strong learner.
+<p>The final model chosen is AdaBoost Classifier.  When the model is trained, it joins and combines several sets of weak classifiers into one powerful ensemble, thereful improves the accuracy of model prediction. It does not tend to be subject to overfitting, because the input data set is not jointly optmized like other methods such as SVM. The model can also be improved by optimizting number of estimators and or learning rate.</p>
+<p>[ref: <a href="https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers">https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers</a>.]
+[ref: <a href="https://scikit-learn.org/stable/modules/ensemble.html#adaboost">https://scikit-learn.org/stable/modules/ensemble.html#adaboost</a>]
+[ref: <a href="https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/">https://www.analyticsvidhya.com/blog/2021/06/adaboost-a-brief-introduction-to-ensemble-learning/</a>]
+[ref: <a href="https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner">https://stats.stackexchange.com/questions/246820/adaboost-with-a-weak-versus-a-strong-learner</a>]
+[ref: <a href="https://scikit-learn.org/stable/modules/ensemble.html#adaboost">https://scikit-learn.org/stable/modules/ensemble.html#adaboost</a>]<br>
+[ref: <a href="https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers">https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers</a>.]
+[ref: <a href="https://scikit-learn.org/stable/modules/ensemble.html#adaboost">https://scikit-learn.org/stable/modules/ensemble.html#adaboost</a>]
 [ref: <a href="https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers">https://en.wikipedia.org/wiki/AdaBoost#:~:text=AdaBoost%2C%20short%20for%20Adaptive%20Boosting,G%C3%B6del%20Prize%20for%20their%20work.&amp;text=AdaBoost%20is%20adaptive%20in%20the,instances%20misclassified%20by%20previous%20classifiers</a>.]</p>
 
 </div>
@@ -15521,10 +15531,10 @@ F-score on testing data: 0.7044
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!!</span>jupyter nbconvert *.ipynb
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!!</span>jupyter nbconvert --to html finding_donors.ipynb
 </pre></div>
 
      </div>
@@ -15540,25 +15550,14 @@ F-score on testing data: 0.7044
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#39;Traceback (most recent call last):&#39;,
- &#39;  File &#34;C:\\Users\\robert.li\\Anaconda3\\Scripts\\jupyter-nbconvert-script.py&#34;, line 10, in &lt;module&gt;&#39;,
- &#39;    sys.exit(main())&#39;,
- &#39;  File &#34;C:\\Users\\robert.li\\Anaconda3\\lib\\site-packages\\jupyter_core\\application.py&#34;, line 264, in launch_instance&#39;,
- &#39;    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)&#39;,
- &#39;  File &#34;C:\\Users\\robert.li\\Anaconda3\\lib\\site-packages\\traitlets\\config\\application.py&#34;, line 846, in launch_instance&#39;,
- &#39;    app.start()&#39;,
- &#39;  File &#34;C:\\Users\\robert.li\\Anaconda3\\lib\\site-packages\\nbconvert\\nbconvertapp.py&#34;, line 346, in start&#39;,
- &#39;    self.convert_notebooks()&#39;,
- &#39;  File &#34;C:\\Users\\robert.li\\Anaconda3\\lib\\site-packages\\nbconvert\\nbconvertapp.py&#34;, line 506, in convert_notebooks&#39;,
- &#39;    raise ValueError(&#39;,
- &#34;ValueError: Please specify an output format with &#39;--to &lt;format&gt;&#39;.&#34;,
- &#34;The following formats are available: [&#39;asciidoc&#39;, &#39;custom&#39;, &#39;html&#39;, &#39;latex&#39;, &#39;markdown&#39;, &#39;notebook&#39;, &#39;pdf&#39;, &#39;python&#39;, &#39;rst&#39;, &#39;script&#39;, &#39;slides&#39;, &#39;webpdf&#39;]&#34;]</pre>
+<pre>[&#39;[NbConvertApp] Converting notebook finding_donors.ipynb to html&#39;,
+ &#39;[NbConvertApp] Writing 796447 bytes to finding_donors.html&#39;]</pre>
 </div>
 
 </div>
